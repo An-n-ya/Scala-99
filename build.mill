@@ -1,0 +1,11 @@
+package build
+import mill._, scalalib._
+
+object solution extends ScalaModule {
+    def scalaVersion = "3.6.1"
+    object test extends ScalaTests with TestModule.ScalaTest  {
+        def ivyDeps = Agg(
+            ivy"org.scalatest::scalatest:3.2.19"
+        )
+    }
+}
