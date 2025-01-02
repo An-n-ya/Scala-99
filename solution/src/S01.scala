@@ -64,6 +64,15 @@ object Solution {
       else elem :: encode(next)
     }
   }
+  def encodeModified[A](ls: List[A]): List[Any] =
+    encode(ls) map { t => if (t._1 == 1) t._2 else t }
+
+  def decode[A](input: List[(Int, A)]): List[A] = input flatMap {
+    e => {
+      List.fill(e._1)(e._2)
+    }
+  }
+  
   def main(args: Array[String]): Unit =
     print("hello\n")
 }

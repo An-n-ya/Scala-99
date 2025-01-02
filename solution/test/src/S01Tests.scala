@@ -56,4 +56,18 @@ class SolutionSpec extends AnyFlatSpec with should.Matchers {
       List((4, "a"), (1, "b"), (2, "c"), (2, "a"), (1, "d"), (4, "e"))
     )
   }
+  // "encodeModified" should "work in S11" in {
+  //   encode(
+  //     encodeModified(List("a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e"))
+  //   ) should be(
+  //     List((4,"a"), "b", (2,"c"), (2,"a"), "d", (4,"e"))
+  //   )
+  // }
+  // "decode" should "work in S12" in {
+  //   encode(
+  //     decode(List((4, "a"), (1, "b"), (2, "c"), (2, "a"), (1, "d"), (4, "e")))
+  //   ) should be(
+  //     List("a", "a", "a", "a", "b", "c", "c", "a", "a", "d", "e", "e", "e", "e")
+  //   )
+  // }
 }
